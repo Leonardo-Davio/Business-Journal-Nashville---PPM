@@ -1,0 +1,89 @@
+body {
+    font-family:'Graphik Web', 'Helvetica Neue', Helvetica, Arial, sans-serif
+}
+
+.div-flex-container-column {
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.NavSite {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    height: 34px;
+    align-items: center;
+}
+
+.NavTitle{
+    font-weight: 700;
+    font-size: 12px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+    justify-self: center;
+    margin: auto 20px auto 15px;
+    width: auto;
+}
+
+.NavClear{
+    border-left: 1px solid #222;
+    height: 20px;
+}
+
+.buttonH{
+    border: none;
+    align-self: center;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.buttonH img {
+    vertical-align: middle;
+    height: 12px;
+    margin-left: 5px;
+}
+
+.dropdown-wrapper{
+    position: relative;
+}
+
+.dropdown-container{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    padding: 10px;
+    width: 200px;
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.signLeft{
+    position: fixed;
+    right: 15px;
+    top: 10px;
+
+}

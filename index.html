@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang ="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <script src="script.js"></script>
+
+        <title>The Business Journals</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="NavSite div-flex-container-column">
+                <div class="NavTitle">
+                    THE BUSINESS JOURNALS
+                </div>
+                <div class="NavClear">&nbsp;</div>
+                <div class="dropdown-wrapper">
+                    <button id="dropdownButton" class="buttonH" onclick="toggleVisibility('dropdownMenu')">
+                        Select a City
+                        <img src="image/chevron-down.svg" alt="#">
+                    </button>
+                    <div class="dropdown-container" id="dropdownMenu">
+                        <div class="dropdown-item">city</div>
+                        <div class="dropdown-item">city</div>
+                        <div class="dropdown-item">city</div>
+                        <div class="dropdown-item">city</div>
+                    </div>
+                </div>
+                <div class="dropdown-wrapper signLeft">
+                    <button id="dropdownButtonSignin" class="buttonH" onclick="toggleVisibility('dropdownSign')">
+                        Sign In
+                        <img src="image/chevron-down.svg" alt="#">
+                    </button>
+                    <div class="dropdown-container" id="dropdownSign">
+                        <div class="dropdown-item">city</div>
+                        <div class="dropdown-item">pippo</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
