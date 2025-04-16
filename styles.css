@@ -1,13 +1,13 @@
-body {
-    font-family:'Graphik Web', 'Helvetica Neue', Helvetica, Arial, sans-serif
+Body {
+    font-family: 'Graphik Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.div-flex-container-column {
+.FlexContainer {
     display: flex;
     flex-direction: row;
 }
 
-header {
+Header {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ header {
     align-items: center;
 }
 
-.NavTitle{
+.NavSite-title {
     font-weight: 700;
     font-size: 12px;
     text-align: center;
@@ -34,56 +34,86 @@ header {
     width: auto;
 }
 
-.NavClear{
+.LineVertical {
     border-left: 1px solid #222;
     height: 20px;
 }
 
-.buttonH{
+.Button {
     border: none;
     align-self: center;
     cursor: pointer;
     font-weight: 700;
 }
 
-.buttonH img {
+.Button img {
     vertical-align: middle;
     height: 12px;
     margin-left: 5px;
 }
 
-.dropdown-wrapper{
+.Dropdown {
     position: relative;
 }
 
-.dropdown-container{
+.Dropdown-container {
     display: none;
-    position: absolute;
+    position: fixed;
+    top: 35px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    margin-top: 5px;
     padding: 10px;
-    width: 200px;
+    width: auto;
     z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 
-.dropdown-item {
+.NoBorder{
+    border: 0 !important;
+    left:0;
+}
+.GridCity{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 10px;
+    justify-content: start;
+}
+
+.GridCity a{
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px;
+    white-space: nowrap;
+    color: #222;
+} 
+
+.GridCity a:hover {
+    color: #23556e;
+}
+
+.Dropdown-item {
     padding: 5px 10px;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
 }
 
-.dropdown-item:last-child {
+.Dropdown-item:last-child {
     border-bottom: none;
 }
 
-.dropdown-item:hover {
+.Dropdown-item:hover {
     background-color: #f1f1f1;
 }
 
-.signLeft{
+.Button--signRight {
     position: fixed;
     right: 15px;
     top: 10px;
+}
 
+.Dropdown-container--Right {
+    position: absolute;
+    right: 15px;
 }
