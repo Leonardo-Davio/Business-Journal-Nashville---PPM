@@ -1,16 +1,107 @@
 <!DOCTYPE html>
-<html lang ="eng">
+<html lang="eng">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="stylesheet" href="styles.css" type="text/css" />
         <script src="script.js"></script>
 
         <title>The Business Journals</title>
     </head>
 
     <body>
+        <header>
+            <nav id="SiteNav" class="site-nav--border">
+                <div class="site-nav">
+                    <div class="site-nav-contents">
+                        <div id="SiteNavBranding" class="site-nav-branding">Nashville Business Jounrnal</div>
+                        <div class="vertical-divider">&nbsp;</div>
+                        <div class="select-city-dropdown">
+                            <button class="select-city-dropdown-trigger select-city-dropdown-trigger-remove-bs-icon" onclick="toggleVisibility('Citys')">
+                                <span>Select a City</span>
+                                <img src="image/chevron-down.svg" alt="Chevron Down" />
+                            </button>
+                            <div id="Citys" class="select-city-container">
+                                <div class="select-city-dropdownMenu">
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>National</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Albany</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Albuquerque</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Atalanta</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Austin</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Baltimore</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Birmingham</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Boston</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Buffalo</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Charlotte</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Chicago</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Cincinnati</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Cleveland</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Columbus</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Dallas</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Dayton</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Denver</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Greensboro/Winston-Salem</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Honolulu</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Houston</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Jacksonville</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Kansas City</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Los Angeles</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Louisville</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Memphis</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Miami/Fort Lauderdale</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Milwaukee</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Minneapolis/St. Paul</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Nashville</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>New York</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Orlando</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Philadelphia</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Phoenix</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Pittsburgh</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Portland</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Providence</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Raleigh/Durham</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Sacramento</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>San Antonio</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>San Francisco</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Seattle</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Silicon Valley</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>St. Louis</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Tampa Bay</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Washington, D.C.</span></a>
+                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Wichita</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Signin-->
+                    <div class="account-nav">
+                        <div class="signIn-trigger">
+                            <span>Sign in</span>
+                            <img class="img-chevron" src="image/chevron-down.svg" alt="Chevron Down" />
+                            <img class="img-user" src="image/person-fill.svg" alt="Person Fill"/>
+                        </div>
+                        <div class="signIn-dropdown">
+                            <a href="WorkingProgress.html">
+                                <text>Sign In <br /> </text>
+                                <span>Existing Members</span>
+                            </a>
+                            <a href="WorkingProgress.html">
+                                <text>Become a Member <br /></text>
+                                <span>It's FREE</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div>pippo</div>
+        </header>
+        <main>
+            questo è il main
+            <div style="height: 500000px">qui serve ad allungare il testo</div>
+            ciao
+        </main>
+        <!--
         <header>
             <div class="NavSite FlexContainer">
                 <div class="NavSite-title">
@@ -67,7 +158,6 @@
                             <a href="WorkingProgress.html">Chicago</a>
                             <a href="WorkingProgress.html">Los Angeles</a>
                             <a href="WorkingProgress.html">Prtland</a>
-                            <a></a>
                             <a href="WorkingProgress.html">Cincinnati</a>
                             <a href="WorkingProgress.html">Louisville</a>
                             <a href="WorkingProgress.html">Providence</a>
@@ -86,5 +176,5 @@
                 </div>
             </div>
         </header>
-    </body>
+    --></body>
 </html>
