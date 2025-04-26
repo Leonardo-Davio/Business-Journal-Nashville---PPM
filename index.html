@@ -1,1174 +1,1214 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="stylesheet" href="styles.css" type="text/css" />
-        <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="script.js"></script>
 
-        <title>The Business Journals</title>
-    </head>
+    <title>The Business Journals</title>
+</head>
 
-    <body>
-        <header>
-            <nav id="SiteNav" class="site-nav--border">
-                <div class="site-nav">
-                    <div class="site-nav-contents">
-                        <div id="SiteNavBranding" class="site-nav-branding">Nashville Business Jounrnal</div>
-                        <div class="vertical-divider">&nbsp;</div>
-                        <div class="select-city-dropdown">
-                            <button class="select-city-dropdown-trigger select-city-dropdown-trigger-remove-bs-icon" onclick="toggleVisibility('Citys')">
-                                <span>Select a City</span>
-                                <img src="image/chevron-down.svg" alt="Chevron Down" />
-                            </button>
-                            <div id="Citys" class="select-city-container">
-                                <div class="select-city-dropdownMenu">
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>National</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Albany</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Albuquerque</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Atalanta</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Austin</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Baltimore</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Birmingham</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Boston</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Buffalo</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Charlotte</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Chicago</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Cincinnati</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Cleveland</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Columbus</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Dallas</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Dayton</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Denver</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Greensboro/Winston-Salem</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Honolulu</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Houston</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Jacksonville</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Kansas City</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Los Angeles</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Louisville</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Memphis</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Miami/Fort Lauderdale</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Milwaukee</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Minneapolis/St. Paul</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Nashville</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>New York</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Orlando</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Philadelphia</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Phoenix</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Pittsburgh</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Portland</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Providence</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Raleigh/Durham</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Sacramento</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>San Antonio</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>San Francisco</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Seattle</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Silicon Valley</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>St. Louis</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Tampa Bay</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Washington, D.C.</span></a>
-                                    <a href="WorkingProgress.html" class="dropdown-item"><span>Wichita</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Signin-->
-                    <div class="account-nav">
-                        <div class="signIn-trigger">
-                            <span>Sign in</span>
-                            <img class="img-chevron" src="image/chevron-down.svg" alt="Chevron Down" />
-                            <img class="img-user" src="image/person-fill.svg" alt="Person Fill" />
-                        </div>
-                        <div class="signIn-dropdown">
-                            <a href="WorkingProgress.html">
-                                <text>Sign In <br /> </text>
-                                <span>Existing Members</span>
-                            </a>
-                            <a href="WorkingProgress.html">
-                                <text>Become a Member <br /></text>
-                                <span>It's FREE</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <nav id="MarketNav">
-                <div id="LinkMenu">
-                    <button onclick="toggleVisibilityMultiId(['menu', 'listImg','xImg'])">
-                        <img src="image/list.svg" id="listImg" style="display: block" alt="listImg" />
-                        <img src="image/x.svg" id="xImg" alt="xImg" />
+<body>
+<header>
+    <nav id="SiteNav" class="site-nav--border">
+        <div class="site-nav">
+            <div class="site-nav-contents">
+                <div id="SiteNavBranding" class="site-nav-branding">Nashville Business Jounrnal</div>
+                <div class="vertical-divider">&nbsp;</div>
+                <div class="select-city-dropdown">
+                    <button class="select-city-dropdown-trigger select-city-dropdown-trigger-remove-bs-icon" onclick="toggleVisibility('Citys')">
+                        <span>Select a City</span>
+                        <img src="image/chevron-down.svg" alt="Chevron Down" />
                     </button>
-                    <div id="menu">
-                        <div class="lastNews-container" id="News">
-                            <a href="WorkingProgress.html">Latest News</a>
-                            <a href="WorkingProgress.html">Lists & Leads</a>
-                            <a href="WorkingProgress.html">Commercial Real Estate</a>
-                            <a href="WorkingProgress.html">Banking</a>
-                            <a href="WorkingProgress.html">Technology</a>
-                            <a href="WorkingProgress.html">Residential Real Estate</a>
-                            <a href="WorkingProgress.html">Food & Lifestyle</a>
-                            <a href="WorkingProgress.html">Nashville Inno</a>
-                            <a href="WorkingProgress.html">Events</a>
-                            <a href="WorkingProgress.html">40 Under 40</a>
-                            <a href="WorkingProgress.html">Best Places to Work</a>
-                            <a href="WorkingProgress.html">Women of Influence</a>
-                            <a href="WorkingProgress.html">Nominations</a>
-                        </div>
-                        <div class="menuLink-container">
-                            <button onclick="toggleVisibilityMenu('Industry')" id="FirstButton">
-                                <b>Industries & Topics</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Industry">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Banking & Financial Service</a>
-                                    <a href="WorkingProgress.html">Career & Workplace</a>
-                                    <a href="WorkingProgress.html">Commercial Real Estate</a>
-                                    <a href="WorkingProgress.html">Diversity, Equity and Inclusion</a>
-                                    <a href="WorkingProgress.html">Education</a>
-                                    <a href="WorkingProgress.html">Energy</a>
-                                    <a href="WorkingProgress.html">Food & Lifestyle</a>
-                                    <a href="WorkingProgress.html">Government & Regulations</a>
-                                    <a href="WorkingProgress.html">Health Care</a>
-                                    <a href="WorkingProgress.html">Manufacturing</a>
-                                    <a href="WorkingProgress.html">Philanthropy & Nonprofits</a>
-                                    <a href="WorkingProgress.html">Progessional Services</a>
-                                    <a href="WorkingProgress.html">Residential real Estate</a>
-                                    <a href="WorkingProgress.html">Retailing</a>
-                                    <a href="WorkingProgress.html">sport Business</a>
-                                    <a href="WorkingProgress.html">Technology</a>
-                                    <a href="WorkingProgress.html">Transportation</a>
-                                    <a href="WorkingProgress.html">Travel & Tourism</a>
-                                    <a href="WorkingProgress.html">Business of Travel</a>
-                                    <a href="WorkingProgress.html">Top Hospitals & Health Systems</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu('Partner')">
-                                <b>Partner Insights (Sponsored Content)</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Partner">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Partner Content</a>
-                                    <a href="WorkingProgress.html">Tenessee ORBIE Awards 2025</a>
-                                    <a href="WorkingProgress.html">Financial Insights Built for Business</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu('Events')">
-                                <b>Events</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Events">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">NBJ Events</a>
-                                    <a href="WorkingProgress.html">Nominations</a>
-                                    <a href="WorkingProgress.html">Event Photos</a>
-                                    <a href="WorkingProgress.html">Business Events Calendar</a>
-                                    <a href="WorkingProgress.html">NBJ's Women of Influence</a>
-                                    <a href="WorkingProgress.html">NBJ's 40 Under 40 Awards</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu('Marketing')">
-                                <b>Marketing Solutions</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Marketing">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Book of Lists</a>
-                                    <a href="WorkingProgress.html">Book of Lists Unlimited</a>
-                                    <a href="WorkingProgress.html">People on the Move</a>
-                                    <a href="WorkingProgress.html">BizSpotlight</a>
-                                    <a href="WorkingProgress.html">Property Showcase</a>
-                                    <a href="WorkingProgress.html">Home of the Day</a>
-                                    <a href="WorkingProgress.html">Cool Spaces</a>
-                                    <a href="WorkingProgress.html">The Company Hub</a>
-                                    <a href="WorkingProgress.html">BizEquyity</a>
-                                    <a href="WorkingProgress.html">Store</a>
-                                    <a href="WorkingProgress.html">Leads</a>
-                                    <a href="WorkingProgress.html">Crane Watch</a>
-                                    <a href="WorkingProgress.html">Advertise With Us</a>
-                                    <a href="WorkingProgress.html">Leadership Trust</a>
-                                    <a href="WorkingProgress.html">TBJ Intelligence</a>
-                                    <a href="WorkingProgress.html">Reprints</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu('Newsletters')">
-                                <b>Newsletters & Subscriptions</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Newsletters">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Newsletter Sign-Up</a>
-                                    <a href="WorkingProgress.html">Start a Subscription</a>
-                                    <a href="WorkingProgress.html">Subscriber-Only Content</a>
-                                    <a href="WorkingProgress.html">Weekly Digital Edition</a>
-                                </div>
-                            </div>
+                    <div id="Citys" class="select-city-container">
+                        <div class="select-city-dropdownMenu">
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>National</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Albany</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Albuquerque</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Atalanta</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Austin</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Baltimore</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Birmingham</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Boston</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Buffalo</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Charlotte</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Chicago</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Cincinnati</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Cleveland</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Columbus</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Dallas</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Dayton</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Denver</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Greensboro/Winston-Salem</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Honolulu</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Houston</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Jacksonville</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Kansas City</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Los Angeles</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Louisville</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Memphis</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Miami/Fort Lauderdale</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Milwaukee</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Minneapolis/St. Paul</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Nashville</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>New York</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Orlando</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Philadelphia</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Phoenix</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Pittsburgh</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Portland</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Providence</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Raleigh/Durham</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Sacramento</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>San Antonio</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>San Francisco</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Seattle</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Silicon Valley</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>St. Louis</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Tampa Bay</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Washington, D.C.</span></a>
+                            <a href="WorkingProgress.html" class="dropdown-item"><span>Wichita</span></a>
                         </div>
                     </div>
                 </div>
-                <div id="Logo">
-                    <a href="index.html">
-                        <img src="" class="logo" alt="Logo" />
-                    </a>
+            </div>
+            <!--Signin-->
+            <div class="account-nav">
+                <div class="signIn-trigger">
+                    <span>Sign in</span>
+                    <img class="img-chevron" src="image/chevron-down.svg" alt="Chevron Down" />
+                    <img class="img-user" src="image/person-fill.svg" alt="Person Fill" />
                 </div>
-                <div id="Promo">
+                <div class="signIn-dropdown">
                     <a href="WorkingProgress.html">
-                        <b>Crane Watch: The Big Map of Projects</b>
-                        <img src="image/chevron-right.svg" alt="chevron-right" />
+                        <text>Sign In <br /> </text>
+                        <span>Existing Members</span>
+                    </a>
+                    <a href="WorkingProgress.html">
+                        <text>Become a Member <br /></text>
+                        <span>It's FREE</span>
                     </a>
                 </div>
-                <div id="MarketSearch">
-                    <button onclick="toggleVisibilityMultiId(['SearchMenu','Search', 'xSearch'])" id="SearchPc">
-                        <div id="Search" style="display: block"><img src="image/search.svg" alt="Search" /></div>
-                        <div id="xSearch" style="display: none"><img src="image/x.svg" alt="X" /></div>
+            </div>
+        </div>
+    </nav>
+    <nav id="MarketNav">
+        <div id="LinkMenu">
+            <button onclick="toggleVisibilityMultiId(['menu', 'listImg','xImg'])">
+                <img src="image/list.svg" id="listImg" style="display: block" alt="listImg" />
+                <img src="image/x.svg" id="xImg" alt="xImg" />
+            </button>
+            <div id="menu">
+                <div class="lastNews-container" id="News">
+                    <a href="WorkingProgress.html">Latest News</a>
+                    <a href="WorkingProgress.html">Lists & Leads</a>
+                    <a href="WorkingProgress.html">Commercial Real Estate</a>
+                    <a href="WorkingProgress.html">Banking</a>
+                    <a href="WorkingProgress.html">Technology</a>
+                    <a href="WorkingProgress.html">Residential Real Estate</a>
+                    <a href="WorkingProgress.html">Food & Lifestyle</a>
+                    <a href="WorkingProgress.html">Nashville Inno</a>
+                    <a href="WorkingProgress.html">Events</a>
+                    <a href="WorkingProgress.html">40 Under 40</a>
+                    <a href="WorkingProgress.html">Best Places to Work</a>
+                    <a href="WorkingProgress.html">Women of Influence</a>
+                    <a href="WorkingProgress.html">Nominations</a>
+                </div>
+                <div class="menuLink-container">
+                    <button onclick="toggleVisibilityMenu('Industry')" id="FirstButton">
+                        <b>Industries & Topics</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
                     </button>
-                    <button onclick="toggleVisibilityMultiId(['SearchMenu','sSearch', 'sxSearch'])" id="SearchMob">
-                        <div id="sSearch" style="display: block"><img src="image/searchWhite.svg" alt="SearchWhite" /></div>
-                        <div id="sxSearch" style="display: none"><img src="image/xWhite.svg" alt="xWhite" /></div>
+                    <div id="Industry">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Banking & Financial Service</a>
+                            <a href="WorkingProgress.html">Career & Workplace</a>
+                            <a href="WorkingProgress.html">Commercial Real Estate</a>
+                            <a href="WorkingProgress.html">Diversity, Equity and Inclusion</a>
+                            <a href="WorkingProgress.html">Education</a>
+                            <a href="WorkingProgress.html">Energy</a>
+                            <a href="WorkingProgress.html">Food & Lifestyle</a>
+                            <a href="WorkingProgress.html">Government & Regulations</a>
+                            <a href="WorkingProgress.html">Health Care</a>
+                            <a href="WorkingProgress.html">Manufacturing</a>
+                            <a href="WorkingProgress.html">Philanthropy & Nonprofits</a>
+                            <a href="WorkingProgress.html">Progessional Services</a>
+                            <a href="WorkingProgress.html">Residential real Estate</a>
+                            <a href="WorkingProgress.html">Retailing</a>
+                            <a href="WorkingProgress.html">sport Business</a>
+                            <a href="WorkingProgress.html">Technology</a>
+                            <a href="WorkingProgress.html">Transportation</a>
+                            <a href="WorkingProgress.html">Travel & Tourism</a>
+                            <a href="WorkingProgress.html">Business of Travel</a>
+                            <a href="WorkingProgress.html">Top Hospitals & Health Systems</a>
+                        </div>
+                    </div>
+                    <button onclick="toggleVisibilityMenu('Partner')">
+                        <b>Partner Insights (Sponsored Content)</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
                     </button>
-                    <div id="SearchMenu">
-                        <div class="searchMenu-div">
-                            <div>
-                                <img src="image/search.svg" alt="search" />
-                                <form id="SearchF" action="WorkingProgress.html" method="get">
-                                    <div id="SearchForm">
-                                        <label for="SearchInput" class="srOnly">Search</label>
-                                        <input id="SearchInput" name="q" type="text" placeholder="Search" />
-                                        <button type="submit">
-                                            <img src="image/arrow-right.svg" alt="arrow-right" />
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
+                    <div id="Partner">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Partner Content</a>
+                            <a href="WorkingProgress.html">Tenessee ORBIE Awards 2025</a>
+                            <a href="WorkingProgress.html">Financial Insights Built for Business</a>
                         </div>
                     </div>
-                </div>
-            </nav>
-            <nav id="LinkMenuWide">
-                <div id="LinkMenu12">
-                    <button onclick="toggleVisibilityMultiId(['menu12', 'listImg12','xImg12'])">
-                        <img src="image/list.svg" id="listImg12" style="display: block" alt="ListImg" />
-                        <img src="image/x.svg" id="xImg12" style="display: none" alt="x" />
+                    <button onclick="toggleVisibilityMenu('Events')">
+                        <b>Events</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
                     </button>
-                    <div id="menu12">
-                        <div class="menuLink-container">
-                            <button onclick="toggleVisibilityMenu12('Industry12')" class="noBorder">
-                                <b>Industries & Topics</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Industry12">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Banking & Financial Service</a>
-                                    <a href="WorkingProgress.html">Career & Workplace</a>
-                                    <a href="WorkingProgress.html">Commercial Real Estate</a>
-                                    <a href="WorkingProgress.html">Diversity, Equity and Inclusion</a>
-                                    <a href="WorkingProgress.html">Education</a>
-                                    <a href="WorkingProgress.html">Energy</a>
-                                    <a href="WorkingProgress.html">Food & Lifestyle</a>
-                                    <a href="WorkingProgress.html">Government & Regulations</a>
-                                    <a href="WorkingProgress.html">Health Care</a>
-                                    <a href="WorkingProgress.html">Manufacturing</a>
-                                    <a href="WorkingProgress.html">Philanthropy & Nonprofits</a>
-                                    <a href="WorkingProgress.html">Progessional Services</a>
-                                    <a href="WorkingProgress.html">Residential real Estate</a>
-                                    <a href="WorkingProgress.html">Retailing</a>
-                                    <a href="WorkingProgress.html">sport Business</a>
-                                    <a href="WorkingProgress.html">Technology</a>
-                                    <a href="WorkingProgress.html">Transportation</a>
-                                    <a href="WorkingProgress.html">Travel & Tourism</a>
-                                    <a href="WorkingProgress.html">Business of Travel</a>
-                                    <a href="WorkingProgress.html">Top Hospitals & Health Systems</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu12('Partner12')">
-                                <b>Partner Insights (Sponsored Content)</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Partner12">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Partner Content</a>
-                                    <a href="WorkingProgress.html">Tenessee ORBIE Awards 2025</a>
-                                    <a href="WorkingProgress.html">Financial Insights Built for Business</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu12('Events12')">
-                                <b>Events</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Events12">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">NBJ Events</a>
-                                    <a href="WorkingProgress.html">Nominations</a>
-                                    <a href="WorkingProgress.html">Event Photos</a>
-                                    <a href="WorkingProgress.html">Business Events Calendar</a>
-                                    <a href="WorkingProgress.html">NBJ's Women of Influence</a>
-                                    <a href="WorkingProgress.html">NBJ's 40 Under 40 Awards</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu12('Marketing12')">
-                                <b>Marketing Solutions</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Marketing12">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Book of Lists</a>
-                                    <a href="WorkingProgress.html">Book of Lists Unlimited</a>
-                                    <a href="WorkingProgress.html">People on the Move</a>
-                                    <a href="WorkingProgress.html">BizSpotlight</a>
-                                    <a href="WorkingProgress.html">Property Showcase</a>
-                                    <a href="WorkingProgress.html">Home of the Day</a>
-                                    <a href="WorkingProgress.html">Cool Spaces</a>
-                                    <a href="WorkingProgress.html">The Company Hub</a>
-                                    <a href="WorkingProgress.html">BizEquyity</a>
-                                    <a href="WorkingProgress.html">Store</a>
-                                    <a href="WorkingProgress.html">Leads</a>
-                                    <a href="WorkingProgress.html">Crane Watch</a>
-                                    <a href="WorkingProgress.html">Advertise With Us</a>
-                                    <a href="WorkingProgress.html">Leadership Trust</a>
-                                    <a href="WorkingProgress.html">TBJ Intelligence</a>
-                                    <a href="WorkingProgress.html">Reprints</a>
-                                </div>
-                            </div>
-                            <button onclick="toggleVisibilityMenu12('Newsletters12')">
-                                <b>Newsletters & Subscriptions</b>
-                                <img src="image/chevron-down.svg" alt="chevron-down" />
-                            </button>
-                            <div id="Newsletters12">
-                                <div class="lastNews-container">
-                                    <a href="WorkingProgress.html">Newsletter Sign-Up</a>
-                                    <a href="WorkingProgress.html">Start a Subscription</a>
-                                    <a href="WorkingProgress.html">Subscriber-Only Content</a>
-                                    <a href="WorkingProgress.html">Weekly Digital Edition</a>
-                                </div>
-                            </div>
+                    <div id="Events">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">NBJ Events</a>
+                            <a href="WorkingProgress.html">Nominations</a>
+                            <a href="WorkingProgress.html">Event Photos</a>
+                            <a href="WorkingProgress.html">Business Events Calendar</a>
+                            <a href="WorkingProgress.html">NBJ's Women of Influence</a>
+                            <a href="WorkingProgress.html">NBJ's 40 Under 40 Awards</a>
+                        </div>
+                    </div>
+                    <button onclick="toggleVisibilityMenu('Marketing')">
+                        <b>Marketing Solutions</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Marketing">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Book of Lists</a>
+                            <a href="WorkingProgress.html">Book of Lists Unlimited</a>
+                            <a href="WorkingProgress.html">People on the Move</a>
+                            <a href="WorkingProgress.html">BizSpotlight</a>
+                            <a href="WorkingProgress.html">Property Showcase</a>
+                            <a href="WorkingProgress.html">Home of the Day</a>
+                            <a href="WorkingProgress.html">Cool Spaces</a>
+                            <a href="WorkingProgress.html">The Company Hub</a>
+                            <a href="WorkingProgress.html">BizEquyity</a>
+                            <a href="WorkingProgress.html">Store</a>
+                            <a href="WorkingProgress.html">Leads</a>
+                            <a href="WorkingProgress.html">Crane Watch</a>
+                            <a href="WorkingProgress.html">Advertise With Us</a>
+                            <a href="WorkingProgress.html">Leadership Trust</a>
+                            <a href="WorkingProgress.html">TBJ Intelligence</a>
+                            <a href="WorkingProgress.html">Reprints</a>
+                        </div>
+                    </div>
+                    <button onclick="toggleVisibilityMenu('Newsletters')">
+                        <b>Newsletters & Subscriptions</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Newsletters">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Newsletter Sign-Up</a>
+                            <a href="WorkingProgress.html">Start a Subscription</a>
+                            <a href="WorkingProgress.html">Subscriber-Only Content</a>
+                            <a href="WorkingProgress.html">Weekly Digital Edition</a>
                         </div>
                     </div>
                 </div>
-                <div class="shortlinks-wrapper">
-                    <div id="ShortLink">
-                        <a href="WorkingProgress.html">Latest News</a>
-                        <a href="WorkingProgress.html">Lists &amp; Leads</a>
-                        <a href="WorkingProgress.html">Commercial Real Estate</a>
-                        <a href="WorkingProgress.html">Banking</a>
-                        <a href="WorkingProgress.html">Technology</a>
-                        <a href="WorkingProgress.html">Residential Real Estate</a>
-                        <a href="WorkingProgress.html">Food &amp; Lifestyle</a>
-                        <a href="WorkingProgress.html">Nashville Inno</a>
-                    </div>
-                    <div id="ShortLink2">
-                        <span>|</span>
-                        <a href="WorkingProgress.html">Events</a>
-                        <a href="WorkingProgress.html">40 Under 40</a>
-                        <a href="WorkingProgress.html">Best Places to Work</a>
-                        <a href="WorkingProgress.html">Women of Influence</a>
-                        <a href="WorkingProgress.html">Nominations</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <section class="s1">
-                <div class="s1-topNews">
-                    <h1>Lorem Ipsum</h1>
-                    <div class="c1">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/620x340?text=PlaceHolder+Resize" alt="placeholder" />
-                            <span class="meta">Lorem Ipsum</span>
-                            <h2 class="h2">Lorem ipsum dolor sit amet</h2>
-                            <span class="span">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </a>
-                    </div>
-                    <div class="c2">
-                        <div class="c2-a">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem Ipsum dolor sit amet</h2>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </a>
-                        </div>
-                        <div class="c2-a noBorder">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem Ipsum dolor sit amet</h2>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="c3">
-                        <div class="c3-a">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem Ipsum dolor sit amet</h2>
-                            </a>
-                        </div>
-                        <div class="c3-a">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem Ipsum dolor sit amet</h2>
-                            </a>
-                        </div>
-                        <div class="c3-a noBorder">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem Ipsum dolor sit amet</h2>
-                            </a>
-                        </div>
+            </div>
+        </div>
+        <div id="Logo">
+            <a href="index.html">
+                <img src="" class="logo" alt="Logo" />
+            </a>
+        </div>
+        <div id="Promo">
+            <a href="WorkingProgress.html">
+                <b>Crane Watch: The Big Map of Projects</b>
+                <img src="image/chevron-right.svg" alt="chevron-right" />
+            </a>
+        </div>
+        <div id="MarketSearch">
+            <button onclick="toggleVisibilityMultiId(['SearchMenu','Search', 'xSearch'])" id="SearchPc">
+                <div id="Search" style="display: block"><img src="image/search.svg" alt="Search" /></div>
+                <div id="xSearch" style="display: none"><img src="image/x.svg" alt="X" /></div>
+            </button>
+            <button onclick="toggleVisibilityMultiId(['SearchMenu','sSearch', 'sxSearch'])" id="SearchMob">
+                <div id="sSearch" style="display: block"><img src="image/searchWhite.svg" alt="SearchWhite" /></div>
+                <div id="sxSearch" style="display: none"><img src="image/xWhite.svg" alt="xWhite" /></div>
+            </button>
+            <div id="SearchMenu">
+                <div class="searchMenu-div">
+                    <div>
+                        <img src="image/search.svg" alt="search" />
+                        <form id="SearchF" action="WorkingProgress.html" method="get">
+                            <div id="SearchForm">
+                                <label for="SearchInput" class="srOnly">Search</label>
+                                <input id="SearchInput" name="q" type="text" placeholder="Search" />
+                                <button type="submit">
+                                    <img src="image/arrow-right.svg" alt="arrow-right" />
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="s1-container">
-                    <div class="s1-lastNews">
-                        <h1>Lorem Ipsum</h1>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
-                        </div>
-                        <div class="c4 noBorder">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
+            </div>
+        </div>
+    </nav>
+    <nav id="LinkMenuWide">
+        <div id="LinkMenu12">
+            <button onclick="toggleVisibilityMultiId(['menu12', 'listImg12','xImg12'])">
+                <img src="image/list.svg" id="listImg12" style="display: block" alt="ListImg" />
+                <img src="image/x.svg" id="xImg12" style="display: none" alt="x" />
+            </button>
+            <div id="menu12">
+                <div class="menuLink-container">
+                    <button onclick="toggleVisibilityMenu12('Industry12')" class="noBorder">
+                        <b>Industries & Topics</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Industry12">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Banking & Financial Service</a>
+                            <a href="WorkingProgress.html">Career & Workplace</a>
+                            <a href="WorkingProgress.html">Commercial Real Estate</a>
+                            <a href="WorkingProgress.html">Diversity, Equity and Inclusion</a>
+                            <a href="WorkingProgress.html">Education</a>
+                            <a href="WorkingProgress.html">Energy</a>
+                            <a href="WorkingProgress.html">Food & Lifestyle</a>
+                            <a href="WorkingProgress.html">Government & Regulations</a>
+                            <a href="WorkingProgress.html">Health Care</a>
+                            <a href="WorkingProgress.html">Manufacturing</a>
+                            <a href="WorkingProgress.html">Philanthropy & Nonprofits</a>
+                            <a href="WorkingProgress.html">Progessional Services</a>
+                            <a href="WorkingProgress.html">Residential real Estate</a>
+                            <a href="WorkingProgress.html">Retailing</a>
+                            <a href="WorkingProgress.html">sport Business</a>
+                            <a href="WorkingProgress.html">Technology</a>
+                            <a href="WorkingProgress.html">Transportation</a>
+                            <a href="WorkingProgress.html">Travel & Tourism</a>
+                            <a href="WorkingProgress.html">Business of Travel</a>
+                            <a href="WorkingProgress.html">Top Hospitals & Health Systems</a>
                         </div>
                     </div>
-                    <div class="s1-yourNews">
-                        <h1>Lorem Ipsum</h1>
-                        <div class="c5">
-                            <h3>Lorem ipsum</h3>
-                            <ul>
-                                <li><a href="WorkingProgress.html">Lorem Ipsum dolor</a></li>
-                                <li><a href="WorkingProgress.html">Lorem Ipsum dolor</a></li>
-                            </ul>
+                    <button onclick="toggleVisibilityMenu12('Partner12')">
+                        <b>Partner Insights (Sponsored Content)</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Partner12">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Partner Content</a>
+                            <a href="WorkingProgress.html">Tenessee ORBIE Awards 2025</a>
+                            <a href="WorkingProgress.html">Financial Insights Built for Business</a>
                         </div>
-                        <div class="c3">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
-                            </a>
+                    </div>
+                    <button onclick="toggleVisibilityMenu12('Events12')">
+                        <b>Events</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Events12">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">NBJ Events</a>
+                            <a href="WorkingProgress.html">Nominations</a>
+                            <a href="WorkingProgress.html">Event Photos</a>
+                            <a href="WorkingProgress.html">Business Events Calendar</a>
+                            <a href="WorkingProgress.html">NBJ's Women of Influence</a>
+                            <a href="WorkingProgress.html">NBJ's 40 Under 40 Awards</a>
                         </div>
-                        <div class="c3">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
-                                <span class="meta">Lorem Ipsum</span>
-                                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                            </a>
+                    </div>
+                    <button onclick="toggleVisibilityMenu12('Marketing12')">
+                        <b>Marketing Solutions</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Marketing12">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Book of Lists</a>
+                            <a href="WorkingProgress.html">Book of Lists Unlimited</a>
+                            <a href="WorkingProgress.html">People on the Move</a>
+                            <a href="WorkingProgress.html">BizSpotlight</a>
+                            <a href="WorkingProgress.html">Property Showcase</a>
+                            <a href="WorkingProgress.html">Home of the Day</a>
+                            <a href="WorkingProgress.html">Cool Spaces</a>
+                            <a href="WorkingProgress.html">The Company Hub</a>
+                            <a href="WorkingProgress.html">BizEquyity</a>
+                            <a href="WorkingProgress.html">Store</a>
+                            <a href="WorkingProgress.html">Leads</a>
+                            <a href="WorkingProgress.html">Crane Watch</a>
+                            <a href="WorkingProgress.html">Advertise With Us</a>
+                            <a href="WorkingProgress.html">Leadership Trust</a>
+                            <a href="WorkingProgress.html">TBJ Intelligence</a>
+                            <a href="WorkingProgress.html">Reprints</a>
+                        </div>
+                    </div>
+                    <button onclick="toggleVisibilityMenu12('Newsletters12')">
+                        <b>Newsletters & Subscriptions</b>
+                        <img src="image/chevron-down.svg" alt="chevron-down" />
+                    </button>
+                    <div id="Newsletters12">
+                        <div class="lastNews-container">
+                            <a href="WorkingProgress.html">Newsletter Sign-Up</a>
+                            <a href="WorkingProgress.html">Start a Subscription</a>
+                            <a href="WorkingProgress.html">Subscriber-Only Content</a>
+                            <a href="WorkingProgress.html">Weekly Digital Edition</a>
                         </div>
                     </div>
                 </div>
-            </section>
-            <div class="moreNews">
-                <a href="WorkingProgress.html">
-                    More Business news
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                    </svg>
+            </div>
+        </div>
+        <div class="shortlinks-wrapper">
+            <div id="ShortLink">
+                <a href="WorkingProgress.html">Latest News</a>
+                <a href="WorkingProgress.html">Lists &amp; Leads</a>
+                <a href="WorkingProgress.html">Commercial Real Estate</a>
+                <a href="WorkingProgress.html">Banking</a>
+                <a href="WorkingProgress.html">Technology</a>
+                <a href="WorkingProgress.html">Residential Real Estate</a>
+                <a href="WorkingProgress.html">Food &amp; Lifestyle</a>
+                <a href="WorkingProgress.html">Nashville Inno</a>
+            </div>
+            <div id="ShortLink2">
+                <span>|</span>
+                <a href="WorkingProgress.html">Events</a>
+                <a href="WorkingProgress.html">40 Under 40</a>
+                <a href="WorkingProgress.html">Best Places to Work</a>
+                <a href="WorkingProgress.html">Women of Influence</a>
+                <a href="WorkingProgress.html">Nominations</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="s1">
+        <div class="s1-topNews">
+            <h1>Lorem Ipsum</h1>
+            <div class="c1">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/620x340?text=PlaceHolder+Resize" alt="placeholder" />
+                    <span class="meta">Lorem Ipsum</span>
+                    <h2 class="h2">Lorem ipsum dolor sit amet</h2>
+                    <span class="span">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </a>
             </div>
-            <section class="s2">
-                <div class="s2-title">
-                    <a href="WorkingProgress.html">
-                        <h3>Lorem Ipsum</h3>
-                        <span>
+            <div class="c2">
+                <div class="c2-a">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem Ipsum dolor sit amet</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </a>
+                </div>
+                <div class="c2-a noBorder">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem Ipsum dolor sit amet</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </a>
+                </div>
+            </div>
+            <div class="c3">
+                <div class="c3-a">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem Ipsum dolor sit amet</h2>
+                    </a>
+                </div>
+                <div class="c3-a">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem Ipsum dolor sit amet</h2>
+                    </a>
+                </div>
+                <div class="c3-a noBorder">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem Ipsum dolor sit amet</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="s1-container">
+            <div class="s1-lastNews">
+                <h1>Lorem Ipsum</h1>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c4 noBorder">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="s1-yourNews">
+                <h1>Lorem Ipsum</h1>
+                <div class="c5">
+                    <h3>Lorem ipsum</h3>
+                    <ul>
+                        <li><a href="WorkingProgress.html">Lorem Ipsum dolor</a></li>
+                        <li><a href="WorkingProgress.html">Lorem Ipsum dolor</a></li>
+                    </ul>
+                </div>
+                <div class="c3">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit.</h2>
+                    </a>
+                </div>
+                <div class="c3">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x120?text=PlaceHolder+Resize" alt="PlaceHolder" />
+                        <span class="meta">Lorem Ipsum</span>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="moreNews">
+        <a href="WorkingProgress.html">
+            More Business news
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+        </a>
+    </div>
+    <section class="s2">
+        <div class="s2-title">
+            <a href="WorkingProgress.html">
+                <h3>Lorem Ipsum</h3>
+                <span>
                             lorem ipsum
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                 />
                             </svg>
                         </span>
-                        <div class="tilteChevron">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </div>
-                    </a>
+                <div class="tilteChevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
                 </div>
-                <div class="s2-linkMini">
-                    <a href="WorkingProgress.html">Lroem ipsum</a>
-                    <a href="WorkingProgress.html">Lroem ipsum</a>
-                    <a href="WorkingProgress.html">Lroem ipsum</a>
-                    <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
-                    <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
-                </div>
-                <div class="s2-m1024">
-                    <div class="s2-container">
-                        <div class="c2">
-                            <div class="c2-a">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                    <span class="meta">Lorem Ipsum</span>
-                                    <h2>Lorem Ipsum dolor sit amet</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </a>
-                            </div>
-                            <div class="c2-a">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                    <span class="meta">Lorem Ipsum</span>
-                                    <h2>Lorem Ipsum dolor sit amet</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </a>
-                            </div>
-                            <div class="c2-a">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                    <span class="meta">Lorem Ipsum</span>
-                                    <h2>Lorem Ipsum dolor sit amet</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="c6-container">
-                            <div class="c6">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <span class="meta">Date</span>
-                                </a>
-                            </div>
-                            <div class="c6">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <span class="meta">Date</span>
-                                </a>
-                            </div>
-                            <div class="c6 noBorder">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <span class="meta">Date</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="s2-M1023">
-                    <div class="c7">
+            </a>
+        </div>
+        <div class="s2-linkMini">
+            <a href="WorkingProgress.html">Lroem ipsum</a>
+            <a href="WorkingProgress.html">Lroem ipsum</a>
+            <a href="WorkingProgress.html">Lroem ipsum</a>
+            <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
+            <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
+        </div>
+        <div class="s2-m1024">
+            <div class="s2-container">
+                <div class="c2">
+                    <div class="c2-a">
                         <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                            <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                            <span class="meta">Lorem Ipsum</span>
+                            <h2>Lorem Ipsum dolor sit amet</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </div>
-                    <div class="c7">
+                    <div class="c2-a">
                         <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                            <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                            <span class="meta">Lorem Ipsum</span>
+                            <h2>Lorem Ipsum dolor sit amet</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </div>
-                    <div class="c7">
+                    <div class="c2-a">
                         <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                            <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                            <span class="meta">Lorem Ipsum</span>
+                            <h2>Lorem Ipsum dolor sit amet</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                         </a>
                     </div>
                 </div>
-            </section>
-            <section class="s2">
-                <div class="paid"><span>PAID LISTINGS</span></div>
-                <div class="s2-title noBorder">
-                    <a href="WorkingProgress.html">
-                        <h3>Lorem Ipsum</h3>
-                        <span>
+                <div class="c6-container">
+                    <div class="c6">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <span class="meta">Date</span>
+                        </a>
+                    </div>
+                    <div class="c6">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <span class="meta">Date</span>
+                        </a>
+                    </div>
+                    <div class="c6 noBorder">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <span class="meta">Date</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s2-M1023">
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="paid"><span>PAID LISTINGS</span></div>
+        <div class="s2-title noBorder">
+            <a href="WorkingProgress.html">
+                <h3>Lorem Ipsum</h3>
+                <span>
                             lorem ipsum
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                 />
                             </svg>
                         </span>
-                        <div class="tilteChevron">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </div>
+                <div class="tilteChevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <span class="s2-underTitle">Lorem ipsum</span>
+        <div class="s2-m1024">
+            <div class="s2-container">
+                <div class="c8">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                        <h2>Lorem Ispum</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                     </a>
                 </div>
-                <span class="s2-underTitle">Lorem ipsum</span>
-                <div class="s2-m1024">
-                    <div class="s2-container">
-                        <div class="c8">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                                <h2>Lorem Ispum</h2>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </a>
-                        </div>
-                        <div class="c8">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                                <h2>Lorem Ispum</h2>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </a>
-                        </div>
-                        <div class="c8">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                                <h2>Lorem Ispum</h2>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </a>
-                        </div>
-                        <div class="c8">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                                <h2>Lorem Ispum</h2>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                            </a>
-                        </div>
-                        <div class="border-vertical"></div>
-                        <div class="c9">
-                            <h4>Lorem ipsum dolor sit amet</h4>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                            <a href="WorkingProgress.html">Get Started</a>
-                        </div>
-                    </div>
+                <div class="c8">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                        <h2>Lorem Ispum</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </a>
                 </div>
-                <div class="s2-M1023">
-                    <div class="c8">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                            <h2>Lorem Ispum</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </a>
-                    </div>
-                    <div class="c8">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                            <h2>Lorem Ispum</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </a>
-                    </div>
-                    <div class="c8">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                            <h2>Lorem Ispum</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </a>
-                    </div>
-                    <div class="c8">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
-                            <h2>Lorem Ispum</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                        </a>
-                    </div>
+                <div class="c8">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                        <h2>Lorem Ispum</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </a>
                 </div>
-                <div class="c9" id="c9">
+                <div class="c8">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                        <h2>Lorem Ispum</h2>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    </a>
+                </div>
+                <div class="border-vertical"></div>
+                <div class="c9">
                     <h4>Lorem ipsum dolor sit amet</h4>
                     <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
                     <a href="WorkingProgress.html">Get Started</a>
                 </div>
-            </section>
-            <section class="s2">
-                <div class="s2-title">
-                    <a href="WorkingProgress.html">
-                        <h3><img src="https://placehold.co/170x21" alt="placeholder" /></h3>
-                        <span>
+            </div>
+        </div>
+        <div class="s2-M1023">
+            <div class="c8">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                    <h2>Lorem Ispum</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </a>
+            </div>
+            <div class="c8">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                    <h2>Lorem Ispum</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </a>
+            </div>
+            <div class="c8">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                    <h2>Lorem Ispum</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </a>
+            </div>
+            <div class="c8">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x200?text=Placeholder+resolution+1x1" alt="placeholder" />
+                    <h2>Lorem Ispum</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </a>
+            </div>
+        </div>
+        <div class="c9" id="c9">
+            <h4>Lorem ipsum dolor sit amet</h4>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+            <a href="WorkingProgress.html">Get Started</a>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="s2-title">
+            <a href="WorkingProgress.html">
+                <h3><img src="https://placehold.co/170x21" alt="placeholder" /></h3>
+                <span>
                             lorem ipsum
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                 />
                             </svg>
                         </span>
-                        <div class="tilteChevron">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <div class="tilteChevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <span class="s2-underTitle nobold"> Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero. </span>
+        <div class="c10">
+            <div class="c10-container">
+                <div class="card">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <div class="subtitle">Lorem</div>
+                        <h3>
+                            Donec auctor nisl et est euismod sollicitudin.
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
                                 />
                             </svg>
-                        </div>
+                        </h3>
+                        <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
                     </a>
+                    <div class="propiety">60 Propieties</div>
                 </div>
-                <span class="s2-underTitle nobold"> Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero. </span>
-                <div class="c10">
-                    <div class="c10-container">
-                        <div class="card">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <div class="subtitle">Lorem</div>
-                                <h3>
-                                    Donec auctor nisl et est euismod sollicitudin.
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-                                        />
-                                    </svg>
-                                </h3>
-                                <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
-                            </a>
-                            <div class="propiety">60 Propieties</div>
-                        </div>
-                        <div class="card">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <div class="subtitle">Lorem</div>
-                                <h3>
-                                    Donec auctor nisl et est euismod sollicitudin.
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-                                        />
-                                    </svg>
-                                </h3>
-                                <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
-                            </a>
-                            <div class="propiety">60 Propieties</div>
-                        </div>
-                        <div class="card">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <div class="subtitle">Lorem</div>
-                                <h3>
-                                    Donec auctor nisl et est euismod sollicitudin.
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-                                        />
-                                    </svg>
-                                </h3>
-                                <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
-                            </a>
-                            <div class="propiety">60 Propieties</div>
-                        </div>
-                        <div class="card">
-                            <a href="WorkingProgress.html" class="linkCard">
-                                <div class="subtitle">Lorem</div>
-                                <h3>
-                                    Donec auctor nisl et est euismod sollicitudin.
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
-                                        <path
-                                            d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
-                                        />
-                                    </svg>
-                                </h3>
-                                <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
-                            </a>
-                            <div class="propiety">60 Propieties</div>
-                        </div>
-                    </div>
-                    <div class="border-vertical"></div>
-                    <div class="c11">
-                        <h4>On the hunt for even more targeted data?</h4>
-                        <p>Aenean fermentum egestas arcu. Integer ut scelerisque ante, sit amet ultrices odio. Praesent bibendum lorem ac mollis vestibulum..</p>
-                        <a href="WorkingProgress.html">
-                            Lorem ipsum
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <div class="card">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <div class="subtitle">Lorem</div>
+                        <h3>
+                            Donec auctor nisl et est euismod sollicitudin.
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
                                 />
                             </svg>
-                        </a>
-                    </div>
+                        </h3>
+                        <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
+                    </a>
+                    <div class="propiety">60 Propieties</div>
                 </div>
-            </section>
-            <section class="s2">
-                <div class="s2-title">
-                    <a href="WorkingProgress.html">
-                        <h3>Lorem Ipsum</h3>
-                        <span>
+                <div class="card">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <div class="subtitle">Lorem</div>
+                        <h3>
+                            Donec auctor nisl et est euismod sollicitudin.
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                                <path
+                                        d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                                />
+                            </svg>
+                        </h3>
+                        <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
+                    </a>
+                    <div class="propiety">60 Propieties</div>
+                </div>
+                <div class="card">
+                    <a href="WorkingProgress.html" class="linkCard">
+                        <div class="subtitle">Lorem</div>
+                        <h3>
+                            Donec auctor nisl et est euismod sollicitudin.
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
+                                <path
+                                        d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1-1-1-1 1H6.663a3.5 3.5 0 0 1-3.163 2M2.5 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2"
+                                />
+                            </svg>
+                        </h3>
+                        <span>Donec auctor nisl et est euismod sollicitudin. Integer nec pharetra arcu, eget ornare libero.</span>
+                    </a>
+                    <div class="propiety">60 Propieties</div>
+                </div>
+            </div>
+            <div class="border-vertical"></div>
+            <div class="c11">
+                <h4>On the hunt for even more targeted data?</h4>
+                <p>Aenean fermentum egestas arcu. Integer ut scelerisque ante, sit amet ultrices odio. Praesent bibendum lorem ac mollis vestibulum..</p>
+                <a href="WorkingProgress.html">
+                    Lorem ipsum
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="s2-title">
+            <a href="WorkingProgress.html">
+                <h3>Lorem Ipsum</h3>
+                <span>
                             lorem ipsum
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                 />
                             </svg>
                         </span>
-                        <div class="tilteChevron">
+                <div class="tilteChevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
+                </div>
+            </a>
+        </div>
+        <div class="s2-linkMini">
+            <a href="WorkingProgress.html">Lroem ipsum</a>
+            <a href="WorkingProgress.html">Lroem ipsum</a>
+            <a href="WorkingProgress.html">Lroem ipsum</a>
+            <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
+            <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
+        </div>
+        <div class="s2-m1024">
+            <div class="s2-container">
+                <div class="c2">
+                    <div class="c2-a">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                            <span class="meta">Lorem Ipsum</span>
+                            <h2>Lorem Ipsum dolor sit amet</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </a>
+                    </div>
+                    <div class="c2-a">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                            <span class="meta">Lorem Ipsum</span>
+                            <h2>Lorem Ipsum dolor sit amet</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </a>
+                    </div>
+                    <div class="c2-a">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
+                            <span class="meta">Lorem Ipsum</span>
+                            <h2>Lorem Ipsum dolor sit amet</h2>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="c6-container">
+                    <div class="c6">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <span class="meta">Date</span>
+                        </a>
+                    </div>
+                    <div class="c6">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <span class="meta">Date</span>
+                        </a>
+                    </div>
+                    <div class="c6 noBorder">
+                        <a href="WorkingProgress.html" class="linkCard">
+                            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                            <span class="meta">Date</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="s2-M1023">
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+            <div class="c7">
+                <a href="WorkingProgress.html" class="linkCard">
+                    <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="s2-title">
+            <a href="WorkingProgress.html">
+                <h3>Events</h3>
+                <span
+                >lorem ipsum
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-                <div class="s2-linkMini">
-                    <a href="WorkingProgress.html">Lroem ipsum</a>
-                    <a href="WorkingProgress.html">Lroem ipsum</a>
-                    <a href="WorkingProgress.html">Lroem ipsum</a>
-                    <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
-                    <a href="WorkingProgress.html" class="hidden">Lroem ipsum</a>
-                </div>
-                <div class="s2-m1024">
-                    <div class="s2-container">
-                        <div class="c2">
-                            <div class="c2-a">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                    <span class="meta">Lorem Ipsum</span>
-                                    <h2>Lorem Ipsum dolor sit amet</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </a>
-                            </div>
-                            <div class="c2-a">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                    <span class="meta">Lorem Ipsum</span>
-                                    <h2>Lorem Ipsum dolor sit amet</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </a>
-                            </div>
-                            <div class="c2-a">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <img src="https://placehold.co/260x150?text=PlaceHolder+Resize" alt="placeholder" />
-                                    <span class="meta">Lorem Ipsum</span>
-                                    <h2>Lorem Ipsum dolor sit amet</h2>
-                                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="c6-container">
-                            <div class="c6">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <span class="meta">Date</span>
-                                </a>
-                            </div>
-                            <div class="c6">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <span class="meta">Date</span>
-                                </a>
-                            </div>
-                            <div class="c6 noBorder">
-                                <a href="WorkingProgress.html" class="linkCard">
-                                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                                    <span class="meta">Date</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="s2-M1023">
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                    <div class="c7">
-                        <a href="WorkingProgress.html" class="linkCard">
-                            <img src="https://placehold.co/200x150?text=PlaceHolder+Resize" alt="placeholder" />
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et varius est, et pulvinar velit. Nam fermentum nisl vel sodales pulvinar.</span>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="s2">
-                <div class="s2-title">
-                    <a href="WorkingProgress.html">
-                        <h3>Events</h3>
-                        <span
-                            >lorem ipsum
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                 />
                             </svg>
                         </span>
-                        <div class="tilteChevron">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </div>
-                    </a>
+                <div class="tilteChevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
                 </div>
-                <span class="s2-underTitle nobold"> Network with key influencers and <strong> build relationships that grow your business.</strong></span>
-                <div class="c12-container">
-                    <div class="c12-a-container">
-                        <a href="WorkingProgress.html" class="c12-a">
-                            <div class="dateGold">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
-                                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
-                                    />
-                                </svg>
-                                May 7
-                            </div>
-                            <h3>Lorem Ipsum</h3>
-                            <span
-                                >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
-                                Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
-                            >
-                        </a>
-                        <a href="WorkingProgress.html" class="c12-a">
-                            <div class="dateGold">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
-                                    <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
-                                    <path
-                                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
-                                    />
-                                </svg>
-                                June 21
-                            </div>
-                            <h3>Lorem Ipsum</h3>
-                            <span
-                                >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
-                                Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
-                            >
-                        </a>
+            </a>
+        </div>
+        <span class="s2-underTitle nobold"> Network with key influencers and <strong> build relationships that grow your business.</strong></span>
+        <div class="c12-container">
+            <div class="c12-a-container">
+                <a href="WorkingProgress.html" class="c12-a">
+                    <div class="dateGold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                            <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                            />
+                        </svg>
+                        May 7
                     </div>
-                    <div class="border-vertical"></div>
-                    <div class="c11">
-                        <h4>Current Nominations</h4>
-                        <p>Aenean fermentum egestas arcu. Integer ut scelerisque ante, sit amet ultrices odio. Praesent bibendum lorem ac mollis vestibulum.</p>
-                        <a href="WorkingProgress.html">
-                            Lorem ipsum
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </a>
+                    <h3>Lorem Ipsum</h3>
+                    <span
+                    >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
+                                Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
+                    >
+                </a>
+                <a href="WorkingProgress.html" class="c12-a">
+                    <div class="dateGold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                            <path
+                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                            />
+                        </svg>
+                        June 21
                     </div>
-                </div>
-            </section>
-            <section class="s2">
-                <div class="paid"><span>PAID LISTINGS</span></div>
-                <div class="s2-title noBorder">
-                    <a href="WorkingProgress.html">
-                        <h3>BizSpotlight</h3>
-                        <span>
+                    <h3>Lorem Ipsum</h3>
+                    <span
+                    >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
+                                Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
+                    >
+                </a>
+            </div>
+            <div class="border-vertical"></div>
+            <div class="c11">
+                <h4>Current Nominations</h4>
+                <p>Aenean fermentum egestas arcu. Integer ut scelerisque ante, sit amet ultrices odio. Praesent bibendum lorem ac mollis vestibulum.</p>
+                <a href="WorkingProgress.html">
+                    Lorem ipsum
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="paid"><span>PAID LISTINGS</span></div>
+        <div class="s2-title noBorder">
+            <a href="WorkingProgress.html">
+                <h3>BizSpotlight</h3>
+                <span>
                             lorem ipsum
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                        fill-rule="evenodd"
+                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                 />
                             </svg>
                         </span>
-                        <div class="tilteChevron">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </div>
-                    </a>
+                <div class="tilteChevron">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
                 </div>
-                <span class="s2-underTitle nobold">The premier newswire outlet for sharing <strong>company news, awards, announcements, and more.</strong></span>
-                <div class="c14">
-                    <div class="c13-container">
-                        <a class="c13">
-                            <img src="https://placehold.co/200x60?text=Placeholder+company" alt="placeholder" />
-                            <span style="text-transform: uppercase"> Lorem ipsuem </span>
-                            <h3>Lorem</h3>
-                            <span class="kappa">lorem ipsum</span>
-                            <span
-                                >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
+            </a>
+        </div>
+        <span class="s2-underTitle nobold">The premier newswire outlet for sharing <strong>company news, awards, announcements, and more.</strong></span>
+        <div class="c14">
+            <div class="c13-container">
+                <a class="c13">
+                    <img src="https://placehold.co/200x60?text=Placeholder+company" alt="placeholder" />
+                    <span style="text-transform: uppercase"> Lorem ipsuem </span>
+                    <h3>Lorem</h3>
+                    <span class="kappa">lorem ipsum</span>
+                    <span
+                    >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
                                 Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
-                            >
-                        </a>
-                        <a class="c13">
-                            <img src="https://placehold.co/200x60?text=Placeholder+company" alt="placeholder" />
-                            <span style="text-transform: uppercase"> Lorem ipsuem </span>
-                            <h3>Lorem</h3>
-                            <span class="kappa">lorem ipsum</span>
-                            <span
-                                >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
+                    >
+                </a>
+                <a class="c13">
+                    <img src="https://placehold.co/200x60?text=Placeholder+company" alt="placeholder" />
+                    <span style="text-transform: uppercase"> Lorem ipsuem </span>
+                    <h3>Lorem</h3>
+                    <span class="kappa">lorem ipsum</span>
+                    <span
+                    >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
                                 Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
-                            >
-                        </a>
-                        <a class="c13">
-                            <img src="https://placehold.co/200x60?text=Placeholder+company" alt="placeholder" />
-                            <span style="text-transform: uppercase"> Lorem ipsuem </span>
-                            <h3>Lorem</h3>
-                            <span class="kappa">lorem ipsum</span>
-                            <span
-                                >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
+                    >
+                </a>
+                <a class="c13">
+                    <img src="https://placehold.co/200x60?text=Placeholder+company" alt="placeholder" />
+                    <span style="text-transform: uppercase"> Lorem ipsuem </span>
+                    <h3>Lorem</h3>
+                    <span class="kappa">lorem ipsum</span>
+                    <span
+                    >Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui.
                                 Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span
-                            >
-                        </a>
-                    </div>
-                    <div class="border-vertical"></div>
-                    <div class="c11">
-                        <h4>Highlight and promote your company's achievements</h4>
-                        <p>Aenean fermentum egestas arcu. Integer ut scelerisque ante, sit amet ultrices odio. Praesent bibendum lorem ac mollis vestibulum.</p>
-                        <a href="WorkingProgress.html">
-                            Lorem ipsum
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section class="s2">
-                <div class="advertising">
-                    <div class="s2-title noBorder">
-                        <a href="WorkingProgress.html">
-                            <h3>Advertising</h3>
-                            <span>
+                    >
+                </a>
+            </div>
+            <div class="border-vertical"></div>
+            <div class="c11">
+                <h4>Highlight and promote your company's achievements</h4>
+                <p>Aenean fermentum egestas arcu. Integer ut scelerisque ante, sit amet ultrices odio. Praesent bibendum lorem ac mollis vestibulum.</p>
+                <a href="WorkingProgress.html">
+                    Lorem ipsum
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                        <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="advertising">
+            <div class="s2-title noBorder">
+                <a href="WorkingProgress.html">
+                    <h3>Advertising</h3>
+                    <span>
                                 lorem ipsum
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                                     <path
-                                        fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                                            fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
                                     />
                                 </svg>
                             </span>
-                            <div class="tilteChevron">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                    <path
-                                        fill-rule="evenodd"
-                                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-                                    />
-                                </svg>
-                            </div>
-                        </a>
+                    <div class="tilteChevron">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path
+                                    fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+                            />
+                        </svg>
                     </div>
-                    <div class="c15">
-                        <div class="c16">
-                            <h4>Lorem ipsum</h4>
-                            <span>Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui. Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span>
-                            <a href="WorkingProgress.html">Connect with our audience</a>
+                </a>
+            </div>
+            <div class="c15">
+                <div class="c16">
+                    <h4>Lorem ipsum</h4>
+                    <span>Ut sit amet sapien ut erat pharetra vulputate. Integer ornare quis dui quis iaculis. Nunc neque mi, ullamcorper in pretium at, sodales nec dui. Mauris pharetra orci ut risus viverra, malesuada hendrerit sem vehicula.</span>
+                    <a href="WorkingProgress.html">Connect with our audience</a>
+                </div>
+                <div class="c17">
+                    <div class="c17-item">
+                        <div class="c17-item-number">
+                            $2.2M
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+                                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"/>
+                            </svg>
                         </div>
+                        <span>Average net worth</span>
+                    </div>
+                    <div class="c17-item">
+                        <div class="c17-item-number">
+                            $228M
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                        </div>
+                        <span>Average gross sales</span>
+                    </div>
+                    <div class="c17-item">
+                        <div class="c17-item-number">
+                            85%
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
+                                <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917zM8 8.46 1.758 5.965 8 3.052l6.242 2.913z"/>
+                                <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466zm-.068 1.873.22-.748 3.496 1.311a.5.5 0 0 0 .352 0l3.496-1.311.22.748L8 12.46z"/>
+                            </svg>
+                        </div>
+                        <span>College graduate+</span>
+                    </div>
+                    <div class="c17-item">
+                        <div class="c17-item-number">
+                            62%
+                            <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                        </div>
+                        <span>Top management</span>
                     </div>
                 </div>
-            </section>
-        </main>
-    </body>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
 </html>
