@@ -612,25 +612,13 @@ button:focus {
     }
 }
 
-/* <480 ->burger menu a sx, logo central grande quanto tutto l'header ae a dx ho il serch con lo sfondo blu
-* 480< x < 768 -> Ho che il burger menu sta a siniztra, header più alto logo largo quanto le schhermo e la lente del search a dx con lo sfondo bianco
-*  768<x <1024 -> burger menu a sinistra, logo a sinistra e lente di ingrandimento infondo a dx
-*/
-/*
-.marketSerch {
-    height:64px;
-    width: 50px;
-    position: relative;
-    order: 4;
-}*/
-
 /*Logo*/
 .logo {
     display: block;
     height: 64px;
     width: 100vw;
-    margin-left: 50px;
-    background-color: gray;
+    margin-left: 0;
+    background-color: #ddd;
     align-items: center;
     justify-content: center;
 }
@@ -638,6 +626,7 @@ button:focus {
 @media (min-width: 768px) {
     .logo {
         width: 190px;
+        margin-left: 50px;
     }
 }
 
