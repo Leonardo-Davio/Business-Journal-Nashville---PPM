@@ -1182,8 +1182,7 @@ main {
 
 .s1-lastNews h1 {
     font-size: 20px;
-    padding: 5px;
-    padding-right: 0;
+    padding: 5px 0 5px 5px;
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
     margin-right: 15px;
@@ -1528,17 +1527,16 @@ main {
 .s2-M1023:hover::-webkit-scrollbar-thumb {
     border-radius: 4px;
     height: 8px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .c7 {
-    margin: 15px 0;
     display: flex;
     flex-direction: column;
     width: 190px;
     height: 270px;
     padding-right: 15px;
-    margin-right: 15px;
+    margin: 15px 15px 15px 0;
     border-right: 1px solid #ccc;
 }
 
@@ -1555,12 +1553,12 @@ main {
     height: 100%;
     font-size: 12px;
     line-height: 1.35;
-    display: -webkit-box; /* Usa un box flessibile */
-    -webkit-line-clamp: 4; /* Mostra solo 4 righe */
-    line-clamp: 4; /* Standard property for compatibility */
-    -webkit-box-orient: vertical; /* Orienta il box verticalmente */
-    overflow: hidden; /* Nasconde il testo in eccesso */
-    text-overflow: ellipsis; /* Aggiunge "..." al testo tagliato */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     white-space: normal;
 }
 
@@ -1584,7 +1582,7 @@ main {
 .s2-underTitle {
     font-size: 16px;
     font-weight: 700;
-    display: flex;
+    display: inline-block;
     width: fit-content;
 }
 
@@ -1682,7 +1680,6 @@ main {
     }
 }
 
-
 .c10 {
     display: flex;
     flex-direction: column;
@@ -1716,7 +1713,7 @@ main {
 .c10-container:hover::-webkit-scrollbar-thumb {
     border-radius: 4px;
     height: 8px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .c10 .card {
@@ -1729,7 +1726,7 @@ main {
     padding: 8px;
 }
 
-.c10 .card  .subtitle {
+.c10 .card .subtitle {
     font-size: 10px;
     text-transform: uppercase;
     color: #707070;
@@ -1737,28 +1734,28 @@ main {
     text-overflow: ellipsis;
 }
 
-.c10 .card  h3 {
+.c10 .card h3 {
     margin: 0;
     padding: 10px 0 0 0;
     white-space: normal;
     overflow-wrap: break-word;
     line-height: 1.25;
-    font: 700;
+    font-weight: 700;
     font-size: 16px;
 }
 
-.c10 .card  h3 > svg {
+.c10 .card h3 > svg {
     color: #256686;
     width: 16px;
     height: 16px;
 }
 
-.c10 .card  span {
+.c10 .card span {
     color: #707070;
     line-height: 1.5;
     font-size: 12px;
     margin-bottom: 8px;
-    line-clamp:2;
+    line-clamp: 2;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal;
@@ -1787,7 +1784,7 @@ main {
 }
 
 .c11 > h4 {
-    padding:0;
+    padding: 0;
     margin: 0 0 10px 0;
     line-height: 1.5;
     font-size: 16px;
@@ -1795,12 +1792,14 @@ main {
     white-space: normal;
 }
 
-.c11 >p {
+.c11 > p {
     font-size: 12px;
     line-height: 1.5;
+    margin: 0;
 }
 
-.c11 >a {
+.c11 > a {
+    margin-top: 5px;
     font-size: 12px;
     line-height: 1.5;
     color: #256686;
@@ -1810,7 +1809,7 @@ main {
     align-items: center;
 }
 
-.c11 >a:hover {
+.c11 > a:hover {
     text-decoration: underline;
 }
 
@@ -1819,10 +1818,10 @@ main {
 }
 
 @media (min-width: 1024px) {
-    .c10 > .border-vertical{
+    .c10 > .border-vertical {
         display: block;
     }
-    
+
     .c10 {
         flex-direction: row;
     }
@@ -1837,7 +1836,258 @@ main {
     }
 
     .c10 .card span {
-        line-clamp:4;
+        line-clamp: 4;
         -webkit-line-clamp: 4;
     }
+}
+
+.c12-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    width: 100%;
+    gap: 15px;
+}
+
+.c12-a-container {
+    display: flex;
+    width: 100%;
+    max-width: 100vw;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.c12-a {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #b09a5c;
+    text-decoration: none;
+}
+
+.c12-a > .dateGold {
+    color: #ae9859;
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #f8f5ef;
+    font-weight: bold;
+    gap: 8px;
+}
+
+.c12-a > h3 {
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700;
+    padding: 10px 8px 8px 8px;
+    background-color: #fff;
+    white-space: normal;
+    color: #222;
+    margin: 0;
+}
+
+.c12-a > span {
+    font-size: 12px;
+    padding: 0 8px 0 8px;
+    line-height: 1.5;
+    color: #707070;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    background-color: #fff;
+}
+
+.c12-a:hover > span {
+    background-color: #f8f5ef;
+}
+
+.c12-a:hover > h3 {
+    background-color: #f8f5ef;
+}
+
+.c12 .border-vertical {
+    display: none;
+}
+
+.c12-container > .c11 {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .c12-container {
+        flex-direction: row;
+    }
+
+    .c12-a {
+        width: 237px;
+        min-width: 237px;
+        height: fit-content;
+    }
+    .c12-a > span {
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+    }
+
+    .c12-container > .c11 {
+        width: 20%;
+    }
+}
+
+.c14 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.c13-container {
+    display: flex;
+    width: 100%;
+    max-width: 100vw;
+    padding-bottom: 2px;
+    white-space: nowrap;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    flex-direction: row;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 4px;
+}
+
+.c13-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.c13-container:hover::-webkit-scrollbar {
+    height: 8px;
+    color: #222;
+}
+
+.c13-container:hover::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.c13 {
+    display: flex;
+    width: min-content;
+    flex-direction: column;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.c13 > img {
+    height:55px;
+    margin-bottom: 10px;
+}
+
+.c13 > span {
+    font-size: 12px;
+    padding: 0 8px 0 8px;
+    line-height: 1.5;
+    color: #707070;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: normal;
+    background-color: #fff;
+}
+
+.c13 > h3 {
+    margin: 0;
+    padding: 10px 0 0 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    line-height: 1.25;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.c13 > .kappa {
+    font-size: 10px;
+    line-height: 1.2;
+    color: #555;
+    text-transform: none;
+}
+
+@media (min-width: 768px) {
+    .c13-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .c13 {
+        width: 29% !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .c14 {
+        flex-direction: row;
+    }
+}
+
+.advertising {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f5ef;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+
+.c15 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.c16 {
+    display: block;
+    justify-content: left;
+}
+
+.c16 >h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.c16 > span {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #222;
+    white-space: normal;
+}
+
+.c16 > a {
+    display: block;
+    white-space: nowrap;
+    width: min-content;
+    padding: 7.5px 30px 6px 30px;
+    background-color: #256686;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.c16 > a:hover {
+    background-color: #1f5772;
 }
