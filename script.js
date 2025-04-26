@@ -6,20 +6,20 @@ function toggleVisibility(conId) {
         container.style.display = 'block';
     }
 }
-function toggleVisibilityMultiId(ids){
+function toggleVisibilityMultiId(ids) {
     ids.forEach(conId => {
         toggleVisibility(conId);
     });
 }
 
-const MENUID =["Industry", "Partner", "Events", "Marketing", "Newsletters"]
+const MENUID = ["Industry", "Partner", "Events", "Marketing", "Newsletters"]
 
 function toggleVisibilityMenu(conId) {/*TODO finserire la transizione*/
     const containerSelect = document.getElementById(conId);
     if (containerSelect.style.display === 'block') {
         containerSelect.style.display = 'none';
     } else {
-    MENUID.forEach(id => {
+        MENUID.forEach(id => {
             const container = document.getElementById(id);
             container.style.display = 'none';
         })
@@ -27,17 +27,36 @@ function toggleVisibilityMenu(conId) {/*TODO finserire la transizione*/
     }
 }
 
-const MENUID12 =["Industry12", "Partner12", "Events12", "Marketing12", "Newsletters12"]
+const MENUID12 = ["Industry12", "Partner12", "Events12", "Marketing12", "Newsletters12"]
 
 function toggleVisibilityMenu12(conId) {
     const containerSelect = document.getElementById(conId);
     if (containerSelect.style.display === 'block') {
         containerSelect.style.display = 'none';
     } else {
-    MENUID12.forEach(id => {
+        MENUID12.forEach(id => {
             const container = document.getElementById(id);
             container.style.display = 'none';
         })
         containerSelect.style.display = 'block';
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+const MENUIDF =["Sub", "About", "Follow", "FNews", "ACBJ"];
+
+function toggleVisibilityMenuF(conId) {
+    const containerSelect = document.getElementById(conId);
+    if (containerSelect.style.display === 'flex') {
+        containerSelect.style.display = 'none';
+    } else {
+        MENUIDF.forEach(id => {
+            const container = document.getElementById(id);
+            container.style.display = 'none';
+        })
+        containerSelect.style.display = 'flex';
     }
 }

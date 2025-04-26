@@ -308,7 +308,7 @@ button:focus {
 .signIn-dropdown {
     position: fixed;
     right: 0;
-    top: 35px;
+    top: 26px;
     width: min-content;
     height: min-content;
     display: none;
@@ -317,6 +317,12 @@ button:focus {
     font-size: 14px;
     z-index: 100000000;
     background-color: #fff;
+}
+
+@media (min-width: 768px){
+    .signIn-dropdown {
+        top: 35px;
+    }
 }
 
 .signIn-dropdown>a {
@@ -419,7 +425,7 @@ button:focus {
 #LinkMenu>div {
     display: none;
     position: fixed;
-    top: 100px;
+    top: 82px;
     left: 0;
     right: 0;
     z-index: 1000;
@@ -427,6 +433,47 @@ button:focus {
     overflow-y: auto;
     background-color: #f1f1f1;
     padding: 10px 30px;
+}
+
+@media (min-width: 480px) {
+    #LinkMenu>div {
+        top: 90px;
+    }
+
+    #SearchMenu .searchMenu-div {
+        top:90px!important;
+    }
+
+    #SearchMenu .searchMenu-div>div {
+        width: 516px;
+    }
+}
+
+@media (min-width: 768px){
+    #SearchMenu .searchMenu-div>div {
+        width: 672px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #LinkMenu>div {
+        top: 100px;
+    }
+
+    #SearchMenu .searchMenu-div {
+        top: 100px!important;
+    }
+
+    #SearchMenu .searchMenu-div>div {
+        width: 888px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #SearchMenu .searchMenu-div {
+        top: 150px!important;
+    }
+
 }
 
 .lastNews-container {
@@ -700,10 +747,10 @@ button:focus {
 
 #SearchMenu .searchMenu-div {
     position: fixed;
-    z-index: 1000000;
+    z-index: 10000000000;
     left: 0;
     right: 0;
-    top: 100px;
+    top: 82px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -772,47 +819,8 @@ input:focus-within {
     border: 0;
 }
 
-@media (min-width: 1200px) {
-    #SearchMenu .searchMenu-div {
-        top: 150px;
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1199.5px) {
-    #SearchMenu .searchMenu-div>div {
-        width: 888px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1023.5px) {
-    #SearchMenu .searchMenu-div>div {
-        width: 672px;
-    }
-
-    #SearchMenu .searchMenu-div {
-        top: 91px;
-    }
-}
-
-@media (min-width: 480px) and (max-width: 767.5px) {
-    #SearchMenu .searchMenu-div>div {
-        width: 516px;
-    }
-
-    #SearchMenu .searchMenu-div {
-        top: 91px;
-    }
-}
-
 @media (max-width: 479.5px) {
-    #SearchMenu .searchMenu-div>div {
-        width: auto;
-    }
-
-    #SearchMenu .searchMenu-div {
-        top: 99px;
-    }
-
+    
     #MarketSearch {
         background-color: #163d50;
     }
@@ -889,20 +897,6 @@ input:focus-within {
 #menu12 .menuLink-container {
     position: relative;
     display: inline-block;
-    width: 100%;
-}
-
-#menu12 .menuLink-container>button {
-    padding: 15px 0;
-    border-top: 1px solid #dddddd;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
-    display: flex;
-    cursor: pointer;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 700;
     width: 100%;
 }
 
@@ -1018,7 +1012,7 @@ input:focus-within {
 
 #ShortLink2 {
     background-color: #fff;
-    z-index: 10000;
+    z-index: 100;
 }
 
 #ShortLink,
@@ -2159,4 +2153,301 @@ main {
     .c15 {
         flex-direction: row;
     }
+}
+
+/*--Foter--*/
+footer {
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+
+}
+
+footer section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+footer>.bg-a {
+    background-color: #edeae4;
+    width: 100vw;
+    justify-items: center;
+}
+
+footer>.bg-b {
+    background-color: #f8f5ef;
+    min-width: 100vw;
+    justify-items: center;
+}
+
+footer>.bg-b>section {
+    min-width: 100vw;
+}
+
+@media(min-width: 768px) {
+    footer section {
+        min-width: 0 !important;
+        width: 684px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+}
+
+@media(min-width: 1024px) {
+    footer section {
+        width: 888px;
+    }
+}
+
+@media (min-width:1200px) {
+    footer section {
+        width: 1068px;
+    }
+}
+
+.footer-header {
+    padding: 0 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-header>.backTop {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 100%;
+}
+
+.backTop>button {
+    border: 0;
+    margin: 12px 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1;
+    color: #555;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+    gap: 5px;
+}
+
+.backTop>button:hover {
+    color: #256686;
+    text-decoration: underline;
+}
+
+.footer-logo {
+    padding: 12px 0 24px 0;
+    height: 18px;
+    justify-content: left;
+}
+
+.footerHeader-link {
+    display: none;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    list-style-type: none;
+    flex-direction: row;
+    margin: 0;
+}
+
+.footerHeader-link>li {
+    margin-right: 18px;
+}
+
+.footerHeader-link>li>a {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 700;
+    text-decoration: none;
+    color: #222;
+}
+
+.footerHeader-link>li>a:hover {
+    color: #256686;
+}
+
+.fh-responsive {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 767px) {
+    .fh-responsive {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        padding-bottom: 0;
+    }
+
+    .footerHeader-link {
+        display: flex;
+    }
+}
+
+@media (min-width:1024px) {
+    .footer-logo {
+        padding-bottom: 24px;
+    }
+
+    .fh-responsive {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+footer .smallWidth {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    border-top: 1px solid #ddd;
+}
+
+footer button {
+    border: 0;
+    background-color: transparent;
+}
+
+footer .dropdown-trigger {
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+footer .dropdown-menu {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    display: none;
+    position: relative;
+    flex-direction: column;
+    margin: 0;
+    border-radius: 0;
+}
+
+footer .dropdown-menu>a {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px;
+    color: #256686;
+}
+
+footer .dropdown-menu>a:hover {
+    color: #2e5670;
+    text-decoration: underline;
+}
+
+footer .social {
+    flex-direction: row !important;
+    gap: 10px !important;
+
+}
+
+.social>a {
+    padding: 8px !important;
+    width: 16px !important;
+    height: 16px;
+    color: #707070 !important;
+    border: 1px solid #ddd;
+}
+
+.bigWidth {
+    display: none;
+}
+
+@media (min-width:768px) {
+    .smallWidth {
+        display: none !important;
+    }
+
+    .bigWidth {
+        display: flex;
+    }
+}
+
+.content-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.content-footer>.content {
+    display: flex;
+    flex-direction: column;
+    width: 16.6%;
+    padding: 5px;
+}
+
+.content-footer>.content>h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.25px;
+    font-weight: 700;
+    white-space: normal;
+}
+
+.content a {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #256686;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.subs2 {
+    width:33.3% !important;
+}
+
+.subs {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.subs>.content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subs>img {
+    max-width: 115px;
+    width: 50%;
+    border: 1px solid #eee;
+}
+
+.g-social {
+    display: grid;
+    grid-template-columns: repeat(2, min-content);
+    grid-template-rows: repeat(2, min-content);
+    gap: 10px;
+}
+
+.g-social > a {
+    width: 16px;
+    padding: 7px 9px
 }
