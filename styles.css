@@ -1705,6 +1705,11 @@ main {
     font-size: 16px;
 }
 
+.c13 > h3 {
+    padding-left: 8px;
+    padding-right: 8px 
+}
+
 .c10 .card h3 > svg {
     color: #256686;
     width: 16px;
