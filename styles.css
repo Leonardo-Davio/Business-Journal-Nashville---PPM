@@ -1521,7 +1521,8 @@ main {
     font-size: 12px;
     padding: 5px;
     color: white;
-    background-color: #5a919c;
+    font-weight: 600;
+    background-color: #4a7a83;
 }
 
 .paid {
@@ -1795,7 +1796,7 @@ main {
 }
 
 .c12-a > .dateGold {
-    color: #ae9859;
+    color: #7b6b3c;
     padding: 16px 8px;
     display: flex;
     flex-direction: row;
