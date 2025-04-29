@@ -2041,6 +2041,11 @@ main {
     .c15 {
         flex-direction: row;
     }
+
+    .c17 {
+        min-width: 50%;
+        width: 50%;
+    }
 }
 
 @media (min-width: 1024px) {
