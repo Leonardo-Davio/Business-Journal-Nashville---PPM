@@ -41,7 +41,7 @@ section {
     margin: auto;
 }
 
-h1{
+h1 {
     font-size: 20px;
     padding: 5px;
     border-bottom: 1px solid #ddd;
@@ -178,13 +178,14 @@ button:focus {
     position: fixed;
     top: 32px;
     left: 0;
-    width: 100%;
+    width: min-content;
     max-width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     box-sizing: border-box;
     display: none;
     z-index: 1000000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .select-city-dropdownMenu {
@@ -196,7 +197,6 @@ button:focus {
     grid-auto-flow: column;
     justify-content: start;
     grid-auto-columns: max-content;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     padding: 8px 10px;
     z-index: 100000000000;
     background-color: #fff;
@@ -252,12 +252,10 @@ button:focus {
     }
 }
 
-@media (min-width: 768px) {
-}
-
 @media (min-width: 1024px) {
     .select-city-container {
         top: 34px;
+        height: fit-content;
     }
 
     .select-city-dropdownMenu {
@@ -1444,7 +1442,8 @@ main {
     margin-top: 10px;
 }
 
-.c6 a h2 {
+.c6 a h2,
+.c7 h2 {
     font-size: 16px;
     line-height: 1.25;
 }
@@ -1504,8 +1503,6 @@ main {
 }
 
 .c7 h2 {
-    font-size: 16px;
-    line-height: 1.25;
     word-break: break-word;
     overflow-wrap: break-word;
     white-space: normal;
@@ -1697,7 +1694,8 @@ main {
     text-overflow: ellipsis;
 }
 
-.c10 .card h3 {
+.c10 .card h3,
+.c13 > h3 {
     margin: 0;
     padding: 10px 0 0 0;
     white-space: normal;
@@ -1968,16 +1966,6 @@ main {
     overflow: hidden;
     white-space: normal;
     background-color: #fff;
-}
-
-.c13 > h3 {
-    margin: 0;
-    padding: 10px 0 0 0;
-    white-space: normal;
-    overflow-wrap: break-word;
-    line-height: 1.25;
-    font-weight: 700;
-    font-size: 16px;
 }
 
 .c13 > .kappa {
