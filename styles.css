@@ -8,6 +8,7 @@ body {
     color: #222;
     margin: 0;
     justify-items: center;
+    overflow-x: hidden;
 }
 
 header {
